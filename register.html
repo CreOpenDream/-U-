@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>共享雨伞-注册页面</title>
+    <link rel="stylesheet" href="img/iconFont/iconfont.css"/>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body,html{
+            height: 100%;
+        }
+        .cont{
+            width: 100%;
+            height: 100%;
+            background: url("bg.jpg") no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .head{
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            color: mediumvioletred;
+            text-align: center;
+            line-height: 50px;
+        }
+        form{
+            width: 90%;
+            height: 77%;
+
+            margin: 0 auto;
+            position: relative;
+        }
+        input{
+            width: 70%;
+            height: 34px;
+            border:2px solid #6ba1a3;
+            outline: none;
+            border-radius: 20px;
+            position: absolute;
+            line-height: 34px;
+            text-align: center;
+        }
+        input::-webkit-input-placeholder{
+            font-size: 19px;
+        }
+        .ip1{
+            top:193px;
+            left: 15%;
+        }
+        .ip2{
+            top:245px;
+            left: 15%;
+        }
+        .ip3{
+            top:300px;
+            left: 15%;
+        }
+        .ip5{
+            top:350px;
+            left: 15%;
+        }
+        #ip4{
+            width: 70%;
+            height: 34px;
+            background-color:#6ba1a3;
+            outline: none;
+            color:#fff;
+            font-size: 22px;
+            border-radius: 20px;
+            position: absolute;
+            top:413px;
+            left: 15%;
+            line-height: 34px;
+            text-align: center;
+        }
+        p.tishi{
+            width: 90%;
+            height: 30px;
+            margin: 0 auto;
+        }
+        p.tishi span{
+            color:red;
+        }
+        @keyframes Rotate {
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        .iconfont{
+            color:darkgreen;
+            position: absolute;
+            top:2px;
+            left:116px;
+            animation: Rotate 1.5s ease infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="cont">
+    <div class="head">东理小U共享雨伞</div>
+    <form action="" method="post">
+        <span class="iconfont">&#xe881;</span>
+        <p style="width: 85%;font-size: 18px;position: absolute;top:133px;left: 15%;">为了您能够使用东理小U共享雨伞，请填写以下信息完成注册</p>
+        <input type="text" placeholder="请输入你的姓名" class="ip1"/>
+        <input type="text" placeholder="请输入你的手机号" class="ip2"/>
+        <input type="text" placeholder="请输入注册码" class="ip3"/>
+        <input type="password" placeholder="请设置你的密码" class="ip5"/>
+        <input type="submit" value="注册" id="ip4"/>
+    </form>
+    <p class="tishi">
+        <span>温馨提示：</span>
+        注册码是您将一卡通放置在感应屏上所显示的id号码。
+    </p>
+    <p class="tishi" style="margin-top: 9px">
+        <span>温馨提示：</span>
+        若你已经注册，请 <a href="login.html">登录</a>
+    </p>
+</div>
+</body>
+</html>
