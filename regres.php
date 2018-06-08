@@ -9,7 +9,7 @@
 	}
 	else if($result == 1){
 	echo "恭喜您注册成功！3秒后自动跳转登录页面...";
-	header("Refresh:3;url=http://www.leipikeji.com");
+	header("Refresh:3;url=index.php");
 	}
 	else if($result == 5){
 	echo "访问出错！3秒后自动跳转至雷劈科技官网...";
