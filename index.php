@@ -11,7 +11,7 @@
 <body>
 	<div class="jq22-container" style="">
 		<div class="login-wrap">
-			<form action="loginPro.php">
+			<form action="loginPro.php" method="get">
 				<div class="login-html">
 				<input id="tab-1" type="radio" name="tab" class="sign-in" checked value="1"><label for="tab-1" class="tab">登 录</label>
 				<input id="tab-2" type="radio" name="tab" class="sign-up" value="2"><label for="tab-2" class="tab">注 册</label>
@@ -40,15 +40,15 @@
 					<div class="sign-up-htm">
 						<div class="group">
 							<label for="name" class="label">姓名</label>
-							<input id="name" type="text" class="input">
+							<input id="name" name="username1" type="text" class="input">
 						</div>
 						<div class="group">
 							<label for="user" class="label">手机号</label>
-							<input id="user" type="text" class="input">
+							<input id="user" name="phone1" type="text" class="input">
 						</div>
 						<div class="group">
 							<label for="pass" class="label">密码</label>
-							<input id="pass" type="password" class="input" data-type="password">
+							<input id="pass" name="pwd1" type="password" class="input" data-type="password">
 						</div>
 						<div class="group">
 							<label for="pass1" class="label">确认密码</label>
@@ -56,11 +56,11 @@
 						</div>
 						<div class="group">
 							<label for="code" class="label">注册码</label>
-							<input id="code" type="text" class="input">
+							<input id="code" name="regcode" type="text" class="input">
 						</div>
 						<div class="group">
 							<label for="code1" class="label">学号</label>
-							<input id="code1" type="text" class="input">
+							<input id="code1" name="stuid" type="text" class="input">
 						</div>
 						<div class="group">
 							<input type="submit" class="button" value="注 册" style="font-size: 18px">
@@ -77,4 +77,12 @@
 	</div>
 	
 </body>
+<?php
+	if(isset($_GET['ret'])){
+		$ret = $_GET['ret'];
+		if($ret == 1){
+			echo "<script>alert('账号或密码出错')</script>";
+		}
+	}
+	?>
 </html>

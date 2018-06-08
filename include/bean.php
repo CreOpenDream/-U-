@@ -1,8 +1,9 @@
 <?php
-class UserInfo{
+class User{
 public $user_id;
 public $user_card_id;
 public $user_tel;
+public $user_pwd;
 public $user_stu_id;
 public $user_name;
 public $user_type;
@@ -24,7 +25,10 @@ public $borrow_status;
 }
 class Back{
 public $back_id;
+public $back_userid;
 public $back_datetime;
+public $back_mid;
+public $back_sid;
 public $back_type;
 public $back_status;
 }

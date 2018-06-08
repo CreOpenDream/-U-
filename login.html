@@ -79,7 +79,7 @@
             display: inline-block;
             width: 71px;
             height: 40px;
-            border: 1px solid #0086b3;
+            border: 0px solid #0086b3;
             position: absolute;
             top:111px;
             right: 120px;
@@ -113,21 +113,25 @@
     <header>
         东理小U-登录
     </header>
-    <form action="">
+    <form action="loginPro.php" method="post">
         <div class="inP user">
             <span>手机号</span>
-            <input type="text" placeholder="请输入手机号"/>
+            <input type="text" name="phone" placeholder="请输入手机号"/>
         </div>
         <div class="inP pwd">
             <span>密码</span>
-            <input type="text" placeholder="请输入注册时的密码"/>
+            <input type="text" name="pwd" placeholder="请输入注册时的密码"/>
         </div>
         <div class="yzm">
             <span>验证码</span>
-            <input type="text" placeholder="请输入验证码"/>
+            <input type="text" name="yzm" placeholder="请输入验证码"/>
         </div>
-        <div class="img"></div>
-        <a href="#">换一张</a>
+        <div class="img">
+        	 <span>
+                    <img title="点击刷新" src="./captcha.php" align="absbottom" onclick="this.src='captcha.php?'+Math.random();">
+             </span>
+        </div>
+        
         <input type="submit" value="登录" id="login"/>
     </form>
 </body>
