@@ -13,8 +13,6 @@
 	$user = $db->execute_dql3($sql);
 	$_SESSION['user'] = $user;
 	
-	$borrow = $_SESSION['borrow'];
-	$back = $_SESSION['back'];
 	
 		//获取借伞记录
 						$sql = "select * from tb_borrow where borrow_userid='{$user->user_card_id}';";
